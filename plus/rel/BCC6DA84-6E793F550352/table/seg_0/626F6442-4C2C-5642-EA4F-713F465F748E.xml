@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="626F6442-4C2C-5642-EA4F-713F465F748E" schemaObject="F9F7DBFB-B935-1DF2-D707-687AD33DF26E" name="SUBJECT">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+<importedID>43E1C5FF-B7B7-0DBC-5FF1-D9A8A5DC5844</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUBJECT_CODE" id="34C6DA29-0DD2-9A75-DB75-FC501BA7E836">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+<importedID>4EF1FD75-7EF7-EC35-75D5-867B2F2F3F7A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBJECT_NAME" id="BFBCA2E7-42F7-E0EC-A9A7-C7967C5199C8">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+<importedID>D4B0C59E-D463-FCB2-EFED-3E5C7DABF430</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEACHER" id="57A3057B-A365-BC1B-2268-AFE209E51035">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+<importedID>09D0E7A7-270D-7F95-17C9-0BE43077C07B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00C1A1F3-1785-7D67-4451-3D58946091EF" schemaObject="F9F7DBFB-B935-1DF2-D707-687AD33DF26E" name="SUBJECT_PK">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+<importedID>B9C2156E-3689-2E83-401E-1F2F0FC17372</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34C6DA29-0DD2-9A75-DB75-FC501BA7E836"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

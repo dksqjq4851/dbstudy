@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EN" directorySegmentName="seg_0" id="4AECC322-DAA4-C320-D5F9-FA0221E5DA0D">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+<schemaObject>F9F7DBFB-B935-1DF2-D707-687AD33DF26E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>EE2EA9F1-61C7-91D1-9853-2AE08D4B9F5E</segment>
+<tableSpace>AA1C692A-8935-AC77-AAE0-CAD7BBCC21B7</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EN_CODE" id="139E63D8-16A3-6347-B22A-46F5553FB565">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STUDENT_NUMBER" id="8C9C5D5A-2D2E-7679-0E98-33E18FB603AF">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBJECT_CODE" id="C1863625-8F5E-DEEB-A96E-408825C14B0E">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C007018" id="56D7DEA8-9F6E-5113-8C7A-9C739C39C4D4">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C007017" id="E336B662-6BF0-2EEF-04CA-493FAE607C7D">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EN_PK" id="91AF50CD-4701-0A1C-7277-923479E0B759">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+<schemaObject>F9F7DBFB-B935-1DF2-D707-687AD33DF26E</schemaObject>
+<segment>72D93C3C-58FC-C502-9276-97D45876EEEA</segment>
+<tableSpace>AA1C692A-8935-AC77-AAE0-CAD7BBCC21B7</tableSpace>
+<indexSegment>72D93C3C-58FC-C502-9276-97D45876EEEA</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

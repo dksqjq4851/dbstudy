@@ -1,0 +1,237 @@
+<<<<<<< HEAD
+----CREATE TABLE SCHOOL(
+----SCHOOL_CODE NUMBER(3) PRIMARY KEY,
+----SCHOOL_NAME VARCHAR2(10));
+----
+----CREATE TABLE STUDENT(
+----SCHOOL_CODE NUMBER(3) ,
+----STUDENT_NAME VARCHAR2(15),
+----FOREIGN KEY (SCHOOL_CODE) REFERENCES SCHOOL (SCHOOL_CODE) );
+----
+----DROP TABLE STUDENT;
+----DROP TABLE SCHOOL;
+----
+----CREATE TABLE STUDENT(
+----STUDENT_NUMBER VARCHAR2(5) PRIMARY KEY,
+----STUDENT_NAME VARCHAR2(10),
+----STUDENT_AGE NUMBER(3));
+----
+----CREATE TABLE SUBJECT(
+----SUBJECT_CODE VARCHAR2(1) PRIMARY KEY,
+----SUBJECT_NAME VARCHAR2(10),
+----TEACHER VARCHAR(10));
+----
+----CREATE TABLE EN(
+----EN_CODE NUMBER(2) PRIMARY KEY,
+----STUDENT_NUMBER VARCHAR2(5),
+----SUBJECT_CODE VARCHAR2(1),
+----FOREIGN KEY (STUDENT_NUMBER) REFERENCES STUDENT (STUDENT_NUMBER),
+----FOREIGN KEY (SUBJECT_CODE) REFERENCES SUBJECT (SUBJECT_CODE));
+----제약조건추가(pk, fk)
+----테이블의 생성 순서 조정
+----칼럼수정(칼럼명, 타입)
+--
+--
+----회원테이블
+--create table member(
+--member_no varchar2(40) primary key,
+--member_id varchar2(30),
+--member_pw varchar2(30),
+--member_name varchar2(15),
+--member_phone varchar2(15),
+--member_date date);
+--
+----게시판
+--create table board(
+--board_no number primary key,
+--board_title varchar2(1000),
+--board_content varchar2(4000),
+--board_hit number,
+--member_no varchar2(40) references member(member_no),
+--board_date date);
+--
+--
+----제조사테이블
+--create table manufacturer(
+--manufacturer_no varchar2(12) primary key,
+--manufacturer_name varchar2(100),
+--manufacturer_phone varchar2(15));
+--
+----창고테이블
+--create table warehouse(
+--warehouse_no number primary key,
+--warehouse_name varchar2(5),
+--warehouse_location varchar2(100),
+--warehouse_used varchar2(1));
+--
+--
+--
+----택배업체테이블
+--create table delivery_service(
+--delivery_service_no varchar(12) primary key,
+--delivery_service_name varchar2(20),
+--delivery_service_phone varchar2(15),
+--delivery_service_address varchar2(100));
+--
+--
+--
+--
+--
+--
+----배송테이블
+--create table delivery(
+--delivery_no number primary key,
+--delivery_service_no varchar2(12),
+--delivery_price number,
+--delivery_date date,
+--foreign key(delivery_service_no) references delivery_service(delivery_service_no));
+--
+----주문테이블
+--create table orders(
+--orders_no number primary key,
+--member_no varchar2(40),
+--delivery_no number,
+--orders_pay varchar2(10),
+--orders_date date,
+--foreign key (member_no) references member(member_no),
+--foreign key (delivery_no) references delivery(delivery_no));
+--
+--
+----제품타이틀
+--create table product(
+--product_code varchar2(10) primary key,
+--product_name varchar2(50),
+--product_price number,
+--product_category varchar2(15),
+--orders_no number references orders(orders_no),
+--manufacturer_no varchar2(12) references manufacturer(manufacturer_no),
+--warehouse_no number references warehouse(warehouse_no),
+--deliver_no number references delivery(delivery_no));
+
+
+drop table delivery;
+drop table delivery_service;
+drop table member;
+drop table manufacturer;
+drop table warehouse;
+
+
+=======
+----CREATE TABLE SCHOOL(
+----SCHOOL_CODE NUMBER(3) PRIMARY KEY,
+----SCHOOL_NAME VARCHAR2(10));
+----
+----CREATE TABLE STUDENT(
+----SCHOOL_CODE NUMBER(3) ,
+----STUDENT_NAME VARCHAR2(15),
+----FOREIGN KEY (SCHOOL_CODE) REFERENCES SCHOOL (SCHOOL_CODE) );
+----
+----DROP TABLE STUDENT;
+----DROP TABLE SCHOOL;
+----
+----CREATE TABLE STUDENT(
+----STUDENT_NUMBER VARCHAR2(5) PRIMARY KEY,
+----STUDENT_NAME VARCHAR2(10),
+----STUDENT_AGE NUMBER(3));
+----
+----CREATE TABLE SUBJECT(
+----SUBJECT_CODE VARCHAR2(1) PRIMARY KEY,
+----SUBJECT_NAME VARCHAR2(10),
+----TEACHER VARCHAR(10));
+----
+----CREATE TABLE EN(
+----EN_CODE NUMBER(2) PRIMARY KEY,
+----STUDENT_NUMBER VARCHAR2(5),
+----SUBJECT_CODE VARCHAR2(1),
+----FOREIGN KEY (STUDENT_NUMBER) REFERENCES STUDENT (STUDENT_NUMBER),
+----FOREIGN KEY (SUBJECT_CODE) REFERENCES SUBJECT (SUBJECT_CODE));
+----제약조건추가(pk, fk)
+----테이블의 생성 순서 조정
+----칼럼수정(칼럼명, 타입)
+--
+--
+----회원테이블
+--create table member(
+--member_no varchar2(40) primary key,
+--member_id varchar2(30),
+--member_pw varchar2(30),
+--member_name varchar2(15),
+--member_phone varchar2(15),
+--member_date date);
+--
+----게시판
+--create table board(
+--board_no number primary key,
+--board_title varchar2(1000),
+--board_content varchar2(4000),
+--board_hit number,
+--member_no varchar2(40) references member(member_no),
+--board_date date);
+--
+--
+----제조사테이블
+--create table manufacturer(
+--manufacturer_no varchar2(12) primary key,
+--manufacturer_name varchar2(100),
+--manufacturer_phone varchar2(15));
+--
+----창고테이블
+--create table warehouse(
+--warehouse_no number primary key,
+--warehouse_name varchar2(5),
+--warehouse_location varchar2(100),
+--warehouse_used varchar2(1));
+--
+--
+--
+----택배업체테이블
+--create table delivery_service(
+--delivery_service_no varchar(12) primary key,
+--delivery_service_name varchar2(20),
+--delivery_service_phone varchar2(15),
+--delivery_service_address varchar2(100));
+--
+--
+--
+--
+--
+--
+----배송테이블
+--create table delivery(
+--delivery_no number primary key,
+--delivery_service_no varchar2(12),
+--delivery_price number,
+--delivery_date date,
+--foreign key(delivery_service_no) references delivery_service(delivery_service_no));
+--
+----주문테이블
+--create table orders(
+--orders_no number primary key,
+--member_no varchar2(40),
+--delivery_no number,
+--orders_pay varchar2(10),
+--orders_date date,
+--foreign key (member_no) references member(member_no),
+--foreign key (delivery_no) references delivery(delivery_no));
+--
+--
+----제품타이틀
+--create table product(
+--product_code varchar2(10) primary key,
+--product_name varchar2(50),
+--product_price number,
+--product_category varchar2(15),
+--orders_no number references orders(orders_no),
+--manufacturer_no varchar2(12) references manufacturer(manufacturer_no),
+--warehouse_no number references warehouse(warehouse_no),
+--deliver_no number references delivery(delivery_no));
+
+
+drop table delivery;
+drop table delivery_service;
+drop table member;
+drop table manufacturer;
+drop table warehouse;
+
+
+>>>>>>> 3ab24fe7a8892d50c96c087fb5395e3e58472f78

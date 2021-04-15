@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="39A9AB23-FABC-BEE7-CB23-55F9C9BE5303" containerWithKeyObject="4F985874-A1F1-8044-4957-9842C677797C" localFKIndex="82E1438E-15FF-6C3F-89FC-8618B0B9FF05" name="SYS_C007013">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+<importedID>B35C215A-BA57-A162-4E34-A3AD65CFF06E</importedID>
+<referredTableLongName>SPRING.SCHOOL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F12822DD-294B-E8D6-CB4D-4056A4E9220C</referredTableID>
+<keyObject>C81F6137-DB0B-C58D-E5C2-D058FF163673</keyObject>
+<referredKeyID>C81F6137-DB0B-C58D-E5C2-D058FF163673</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>SCHOOL_CODE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

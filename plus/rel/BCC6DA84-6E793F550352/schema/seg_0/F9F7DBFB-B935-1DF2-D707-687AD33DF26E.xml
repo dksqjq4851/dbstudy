@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="SPRING" directorySegmentName="seg_0" id="F9F7DBFB-B935-1DF2-D707-687AD33DF26E">
+<createdBy>ITSC</createdBy>
+<createdTime>2021-04-01 02:37:51 UTC</createdTime>
+<ownerDesignName>plus</ownerDesignName>
+<importedID>F92525AD-0396-CA90-D43E-F9790530F02D</importedID>
+</SchemaObject>
